@@ -1,0 +1,342 @@
+2014/07/14 10:45:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'cddb'' in D:\xampp\htdocs\cddb\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\xampp\htdocs\cddb\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\xampp\htdocs\cddb\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 D:\xampp\htdocs\cddb\framework\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 D:\xampp\htdocs\cddb\framework\web\CFormModel.php(40): ModelCode->init()
+#6 D:\xampp\htdocs\cddb\framework\gii\CCodeGenerator.php(152): CFormModel->__construct()
+#7 D:\xampp\htdocs\cddb\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('')
+#13 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/model')
+#14 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/cddb/index.php?r=gii/model
+HTTP_REFERER=http://127.0.0.1/cddb/index.php?r=gii/default/index
+---
+2014/07/14 12:49:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in D:\xampp\htdocs\cddb\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\xampp\htdocs\cddb\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\xampp\htdocs\cddb\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Book))
+#7 D:\xampp\htdocs\cddb\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Book')
+#8 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(130): CActiveDataProvider->__construct('Book')
+#9 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionIndex()
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('')
+#19 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book')
+#20 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cddb/index.php?r=book
+---
+2014/07/14 13:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product/create".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('product/create')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/index.php?r=product/create
+HTTP_REFERER=http://127.0.0.1/cddb/index.php?r=book
+---
+2014/07/15 09:01:48 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in D:\xampp\htdocs\cddb\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\layouts\main.php(29): CComponent->__call('isGuest', Array)
+#1 D:\xampp\htdocs\cddb\protected\views\layouts\main.php(29): CWebUser->isGuest()
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\cddb\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\cddb\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 D:\xampp\htdocs\cddb\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 D:\xampp\htdocs\cddb\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#10 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\cddb\framework\web\CController.php(785): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#13 D:\xampp\htdocs\cddb\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\cddb\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('')
+#19 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cddb/index.php
+---
+2014/07/15 09:02:25 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in D:\xampp\htdocs\cddb\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\layouts\main.php(29): CComponent->__call('isGuest', Array)
+#1 D:\xampp\htdocs\cddb\protected\views\layouts\main.php(29): CWebUser->isGuest()
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\cddb\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\cddb\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 D:\xampp\htdocs\cddb\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 D:\xampp\htdocs\cddb\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#10 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\cddb\framework\web\CController.php(785): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#13 D:\xampp\htdocs\cddb\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\cddb\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('')
+#19 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cddb/index.php
+---
+2014/07/15 09:10:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tt/a1".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('tt/a1')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/index.php?r=tt/a1
+---
+2014/07/15 09:11:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in D:\xampp\htdocs\cddb\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\xampp\htdocs\cddb\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\xampp\htdocs\cddb\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\xampp\htdocs\cddb\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Type))
+#7 D:\xampp\htdocs\cddb\protected\models\Type.php(22): CActiveRecord::model('Type')
+#8 D:\xampp\htdocs\cddb\protected\controllers\TTController.php(14): Type::model()
+#9 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): TTController->actiona1()
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\cddb\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('a1')
+#14 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('tt/a1')
+#15 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/cddb/index.php?r=tt/a1
+---
+2014/07/15 09:14:24 [error] [php] Array to string conversion (D:\xampp\htdocs\cddb\protected\controllers\TTController.php:14)
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CController.php(287): TTController->runAction()
+#1 D:\xampp\htdocs\cddb\framework\web\CController.php(266): TTController->runActionWithFilters()
+#2 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): TTController->run()
+#3 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\cddb\index.php(13): CWebApplication->run()
+REQUEST_URI=/cddb/index.php?r=tt/a1
+in D:\xampp\htdocs\cddb\protected\controllers\TTController.php (14)
+in D:\xampp\htdocs\cddb\index.php (13)
+2014/07/15 09:23:35 [error] [exception.CException] exception 'CException' with message 'Book and its behaviors do not have a method or closure named "getTypeOptions".' in D:\xampp\htdocs\cddb\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(226): CComponent->__call('getTypeOptions', Array)
+#1 D:\xampp\htdocs\cddb\protected\views\book\_form.php(20): CActiveRecord->__call('getTypeOptions', Array)
+#2 D:\xampp\htdocs\cddb\protected\views\book\_form.php(20): Book->getTypeOptions()
+#3 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): CController->renderPartial('_form', Array)
+#7 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#8 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#11 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): CController->render('create', Array)
+#12 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#13 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('create')
+#22 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book/create')
+#23 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cddb/index.php?r=book/create
+HTTP_REFERER=http://127.0.0.1/cddb/index.php?r=book
+---
+2014/07/15 09:32:14 [error] [exception.CException] exception 'CException' with message 'Book and its behaviors do not have a method or closure named "getTypeOptions".' in D:\xampp\htdocs\cddb\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\db\ar\CActiveRecord.php(226): CComponent->__call('getTypeOptions', Array)
+#1 D:\xampp\htdocs\cddb\protected\views\book\_form.php(21): CActiveRecord->__call('getTypeOptions', Array)
+#2 D:\xampp\htdocs\cddb\protected\views\book\_form.php(21): Book->getTypeOptions()
+#3 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): CController->renderPartial('_form', Array)
+#7 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#8 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#11 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): CController->render('create', Array)
+#12 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#13 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('create')
+#22 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book/create')
+#23 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cddb/index.php?r=book/create
+---
+2014/07/15 09:38:46 [error] [php] Invalid argument supplied for foreach() (D:\xampp\htdocs\cddb\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\book\_form.php(60): CActiveForm->dropDownList()
+#1 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require()
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): BookController->renderInternal()
+#3 D:\xampp\htdocs\cddb\framework\web\CController.php(870): BookController->renderFile()
+#4 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): BookController->renderPartial()
+#5 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require()
+#6 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): BookController->renderInternal()
+#7 D:\xampp\htdocs\cddb\framework\web\CController.php(870): BookController->renderFile()
+#8 D:\xampp\htdocs\cddb\framework\web\CController.php(783): BookController->renderPartial()
+#9 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): BookController->render()
+#10 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#11 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): BookController->runAction()
+#13 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): BookController->filterAccessControl()
+#16 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\xampp\htdocs\cddb\framework\web\CController.php(266): BookController->runActionWithFilters()
+#19 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): BookController->run()
+#20 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\xampp\htdocs\cddb\index.php(13): CWebApplication->run()
+REQUEST_URI=/cddb/index.php?r=book/create
+in D:\xampp\htdocs\cddb\protected\views\book\_form.php (60)
+in D:\xampp\htdocs\cddb\protected\views\book\create.php (15)
+in D:\xampp\htdocs\cddb\protected\controllers\BookController.php (78)
+2014/07/15 09:39:48 [error] [php] Invalid argument supplied for foreach() (D:\xampp\htdocs\cddb\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\book\_form.php(60): CActiveForm->dropDownList()
+#1 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require()
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): BookController->renderInternal()
+#3 D:\xampp\htdocs\cddb\framework\web\CController.php(870): BookController->renderFile()
+#4 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): BookController->renderPartial()
+#5 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require()
+#6 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): BookController->renderInternal()
+#7 D:\xampp\htdocs\cddb\framework\web\CController.php(870): BookController->renderFile()
+#8 D:\xampp\htdocs\cddb\framework\web\CController.php(783): BookController->renderPartial()
+#9 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): BookController->render()
+#10 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#11 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): BookController->runAction()
+#13 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): BookController->filterAccessControl()
+#16 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\xampp\htdocs\cddb\framework\web\CController.php(266): BookController->runActionWithFilters()
+#19 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): BookController->run()
+#20 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\xampp\htdocs\cddb\index.php(13): CWebApplication->run()
+REQUEST_URI=/cddb/index.php?r=book/create
+in D:\xampp\htdocs\cddb\protected\views\book\_form.php (60)
+in D:\xampp\htdocs\cddb\protected\views\book\create.php (15)
+in D:\xampp\htdocs\cddb\protected\controllers\BookController.php (78)
+2014/07/15 09:50:08 [error] [exception.CException] exception 'CException' with message 'BookController and its behaviors do not have a method or closure named "widgets".' in D:\xampp\htdocs\cddb\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\book\_form.php(42): CComponent->__call('widgets', Array)
+#1 D:\xampp\htdocs\cddb\protected\views\book\_form.php(42): BookController->widgets('zii.widget.jui....', Array)
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\cddb\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): CController->render('create', Array)
+#11 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#12 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#19 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('create')
+#21 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book/create')
+#22 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/cddb/index.php?r=book/create
+---
+2014/07/15 09:50:23 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widget.jui.CJuiDatePicker" is invalid. Make sure it points to an existing PHP file.' in D:\xampp\htdocs\cddb\framework\YiiBase.php:318
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWidgetFactory.php(147): YiiBase::import('zii.widget.jui....', true)
+#1 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(BookController), 'zii.widget.jui....', Array)
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widget.jui....', Array)
+#3 D:\xampp\htdocs\cddb\protected\views\book\_form.php(42): CBaseController->widget('zii.widget.jui....', Array)
+#4 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\cddb\protected\views\book\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#9 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#10 D:\xampp\htdocs\cddb\framework\web\CController.php(870): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#11 D:\xampp\htdocs\cddb\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(78): CController->render('create', Array)
+#13 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionCreate()
+#14 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#21 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('create')
+#23 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book/create')
+#24 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/cddb/index.php?r=book/create
+---
+2014/07/15 10:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "proteced".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('proteced')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/proteced
+---

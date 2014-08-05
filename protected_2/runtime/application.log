@@ -1,0 +1,310 @@
+2014/07/16 09:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ct/a1".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('ct/a1')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/ct/a1
+---
+2014/07/16 09:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ct/a1".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('ct/a1')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/ct/a1
+---
+2014/07/16 10:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://192.168.2.100/cddb/site/index?mobile=on
+---
+2014/07/16 10:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://192.168.2.100/cddb/site/index?mobile=on
+---
+2014/07/16 10:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/?mobile=on
+---
+2014/07/16 10:41:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/?mobile=on
+---
+2014/07/16 10:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/?mobile=on
+---
+2014/07/16 10:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:52:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/icons-18-white.png".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/icon...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/icons-18-white.png
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/icons-18-white.png".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/icon...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/icons-18-white.png
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/icons-18-white.png".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/icon...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/icons-18-white.png
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/ajax-loader.gif".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/ajax...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/ajax-loader.gif
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/icons-18-white.png".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/icon...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/icons-18-white.png
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 10:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/icons-36-white.png".' in D:\xampp\htdocs\cddb\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('css/images/icon...')
+#1 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cddb/css/images/icons-36-white.png
+HTTP_REFERER=http://127.0.0.1/cddb/tt/a2
+---
+2014/07/16 11:51:13 [error] [exception.CException] exception 'CException' with message 'BookController has an extra endWidget() call in its view.' in D:\xampp\htdocs\cddb\framework\web\CBaseController.php:211
+Stack trace:
+#0 D:\xampp\htdocs\cddb\protected\views\layouts\mobile.php(64): CBaseController->endWidget()
+#1 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(127): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\cddb\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\xampp\htdocs\cddb\framework\web\CController.php(785): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\cddb\protected\controllers\BookController.php(133): CController->render('index', Array)
+#5 D:\xampp\htdocs\cddb\framework\web\actions\CInlineAction.php(50): BookController->actionIndex()
+#6 D:\xampp\htdocs\cddb\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\xampp\htdocs\cddb\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\xampp\htdocs\cddb\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\cddb\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\xampp\htdocs\cddb\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\xampp\htdocs\cddb\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\xampp\htdocs\cddb\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(276): CController->run('')
+#15 D:\xampp\htdocs\cddb\framework\web\CWebApplication.php(135): CWebApplication->runController('book')
+#16 D:\xampp\htdocs\cddb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\cddb\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/cddb/book
+HTTP_REFERER=http://127.0.0.1/cddb/index.php
+---
