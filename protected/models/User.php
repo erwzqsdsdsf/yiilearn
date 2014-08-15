@@ -16,6 +16,8 @@ class User extends CActiveRecord
 {
     public $password;
     public $password_repeat;
+    public $person_fname;
+    public $person_lname;
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -50,7 +52,7 @@ class User extends CActiveRecord
             array('password_repeat', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, pwd_hash, person_id', 'safe', 'on'=>'search'),
+			array(' person_fname, person_lname，id, username, pwd_hash, person_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -85,18 +87,22 @@ class User extends CActiveRecord
 	 */
 	public function search()
 	{
-		// Warning: Please modify the following code to remove attributes that12
+		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('username',$this->username,true);
-		$criteria->compare('pwd_hash',$this->pwd_hash,true);
-		$criteria->compare('person_id',$this->person_id,true);
+        $criteria->compare('person.fname',$this->person_fname,true);
+        $criteria->compare('person.lname',$this->person_lname,true);
+        $criteria->with=array('person');
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+//        这里是产生一个可以从其中调用get data的对象。可以对他执行 getdata，返回所有的数据。
+//        在search情况下，这个模型只是一个容器，数据的容器
+//        所以这些都是安全
 	}
 }

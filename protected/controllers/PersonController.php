@@ -139,10 +139,11 @@ class PersonController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Person('search');
+        //这里定义了一个新模型，并且是search模型。然后所有属性清零。如果是post，那么设置属性是用户的输入
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Person']))
+		if(isset($_GET['Person']))  //这里竟然是ger，而不是post，也即使只能被ajax使用
 			$model->attributes=$_GET['Person'];
-
+//        这里设置了所有inpu而来的的属性
 		$this->render('admin',array(
 			'model'=>$model,
 		));
