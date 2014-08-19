@@ -48,14 +48,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 		'username',
         array(
+            'name'=>'person_fname',
             'header' => 'First Name',
             'value' => '$data->person->fname',//这个data是每行的数据，perrson是user的relation的key
             //竟然是可以直接访问的！！！！！！
         ),
         array(
-            'name' => 'person.lname',
+            'name' => 'person_lname',
             'header' =>'Last Name',
-//            'value' => '$data->person->lname',
+            'value' => '$data->person->lname',
         ),
 
 

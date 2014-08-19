@@ -61,7 +61,7 @@ class UserController extends Controller
 	 */
 	public function actionCreate()
 	{
-        $user=new User();
+        $user=new User('passwordset');
         $person=new Person();
 
 
@@ -71,7 +71,8 @@ class UserController extends Controller
 		if(isset($_POST['User'],$_POST['Person']))
 		{
             $person->attributes=$_POST['Person'];
-
+            if ($model->password|| $model->password_repeat)
+                $model->scenario = 'passwordset'; //场景竟然还可以在后面使用？
 			if($person->save())
                 $user->attributes=$_POST['User'];
                 $user->person_id = $person->id;

@@ -462,3 +462,13 @@ Stack trace:
 #21 {main}
 REQUEST_URI=/cbdb/index.php?r=user/
 ---
+2014/08/18 07:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\".' in D:\xampp\htdocs\cbdb\framework\web\CController.php:484
+Stack trace:
+#0 D:\xampp\htdocs\cbdb\framework\web\CController.php(271): CController->missingAction('\\')
+#1 D:\xampp\htdocs\cbdb\framework\web\CWebApplication.php(276): CController->run('\\')
+#2 D:\xampp\htdocs\cbdb\framework\web\CWebApplication.php(135): CWebApplication->runController('user/\\')
+#3 D:\xampp\htdocs\cbdb\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cbdb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cbdb/index.php?r=user/\
+---

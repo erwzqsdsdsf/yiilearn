@@ -46,15 +46,33 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('username, ', 'required'),
-			array('username', 'length', 'max'=>20),
-			array('password', 'length', 'max'=>32),
-			array('password', 'compare','compareAttribute'=>'password_repeat','message'=>'两次的密码必须相同'),
+            array('username', 'unique'),
+            array('password, password_repeat', 'required','on' => 'passwordset'),
+            array('username', 'length', 'min' => 3, 'max'=>20),
+            array('password', 'length', 'min' => 8, 'max'=>32,'on' => 'passwordset'),
+			array('password', 'compare','on' => 'passwordset','compareAttribute'=>'password_repeat','message'=>'两次的密码必须相同'),
+            array('password', 'passwordStrengthOk','on' => 'passwordset'),
             array('password_repeat', 'safe'),
-			// The following rule is used by search().
+            // The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array(' person_fname, person_lname，id, username, pwd_hash, person_id', 'safe', 'on'=>'search'),
 		);
 	}
+    public function passwordStrengthOk($attribute, $params)
+    {
+        // default to true
+        $valid = true;
+
+        $valid=$valid&&preg_match('/.*[\d].*/',$this->$attribute);
+        $valid=$valid&&preg_match('/.*[\W].*/',$this->$attribute);
+        $valid=$valid&&preg_match('/.*[A-Z].*/',$this->$attribute);
+        if(!$valid)
+        {
+            $this->addError($attribute,'密码强度不够');
+        }
+        return $valid;
+
+    }
 
 	/**
 	 * @return array relational rules.
@@ -98,11 +116,52 @@ class User extends CActiveRecord
         $criteria->compare('person.lname',$this->person_lname,true);
         $criteria->with=array('person');
 
+        $sort=new CSort;
+        $sort->attributes=array(
+//            'person_fname'=>array(
+//                'asc'=>'person.fname',
+//                'desc'=>'person.fname DESC'
+//            ),
+            'person_fname' => array(
+                'asc' => 'person.fname',
+                'desc' => 'person.fname DESC',
+            ),
+            'person_lname' => array(
+                'asc' => 'person.lname',
+                'desc' => 'person.lname DESC',
+            ),
+            '*'
+        );
+
+
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+            'sort'=>$sort,
 		));
 //        这里是产生一个可以从其中调用get data的对象。可以对他执行 getdata，返回所有的数据。
 //        在search情况下，这个模型只是一个容器，数据的容器
 //        所以这些都是安全
 	}
+    public function hash($value)
+    {
+        return crypt($value);
+    }
+    protected function beforeSave()
+    {
+        if (parent::beforeSave())  // 必须首先调用父类的beforesave
+        {
+            $this->pwd_hash = $this->hash($this->password);//然后把输入的password 哈希后保存到pwd hased
+            return true;
+        }
+        return false;
+    }
+//    这个先是laod一个模型，然后check这个模型，如果输入的密码，和这个密码相同，check ，返回true
+    public function check($value)
+    {
+        $new_hash = crypt($value, $this->pwd_hash);
+        if ($new_hash == $this->pwd_hash) {
+            return true;
+        }
+        return false;
+    }
 }
